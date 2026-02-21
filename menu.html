@@ -1,35 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Riss – Меню</title>
 
-    <title>Cafe&#768 Riss - Меню</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+
 <body>
-    <header>
-        <div class="logo"> Cafe&#768 Riss</div>
-        <nav>
-            <ul>
-               <li><a href="index.html">Начало</a></li>
-                <li><a href="about.html">За нас</a></li>
-                <li><a href="menu.html">Меню</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="Coffee specialties">Специалитети</section>
-        <section id="Deserts">Десерти</section>
-            <section id="Rooms">Зали</section>
-        <section id="Cats">Котките</section>
+<header>
+    <div class="logo">Café Riss</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="about.html">За нас</a></li>
+            <li><a href="menu.html" class="active">Меню</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
 
-    </main>
+<main>
 
-    <footer>
-        &copy 2026 Cafe&#768 Riss
-    </footer>
+    <!-- Кафе напитки -->
+    <h2 class="menu-section-title" id="coffee">Кафе напитки</h2>
+    <div class="menu-grid">
+
+        <div class="item">
+            <img src="images/coffees/espresso.jpg" alt="Еспресо">
+            <h3>Еспресо</h3>
+            <table class="price-table">
+                <tr><td>Малко</td><td>2.80 лв / 1,44 €</td></tr>
+                <tr><td>Голямо</td><td>3.20 лв / 1,64 €</td></tr>
+            </table>
+        </div>
+
+        <div class="item">
+            <img src="images/coffees/cappuccino.jpg" alt="Капучино">
+            <h3>Капучино</h3>
+            <table class="price-table">
+                <tr><td>Малко</td><td>3.50 лв / 1,79 €</td></tr>
+                <tr><td>Голямо</td><td>4.00 лв / 2,05 €</td></tr>
+            </table>
+        </div>
+
+        <div class="item">
+            <img src="images/coffees/latte.jpg" alt="Лате">
+            <h3>Лате</h3>
+            <table class="price-table">
+                <tr><td>Малко</td><td>3.80 лв / 1,95 €</td></tr>
+                <tr><td>Голямо</td><td>4.30 лв / 2,20 €</td></tr>
+            </table>
+        </div>
+
+    </div>
+
+
+    <!-- Десерти -->
+    <h2 class="menu-section-title" id="desserts">Десерти</h2>
+    <div class="menu-grid">
+
+        <div class="item">
+            <img src="images/desserts/dessert1.jpg" alt="Чийзкейк">
+            <h3>Чийзкейк</h3>
+            <table class="price-table">
+                <tr><td>Парче</td><td>4.50 лв /2,30 €/</td></tr>
+            </table>
+        </div>
+
+        <div class="item">
+            <img src="images/desserts/dessert2.jpg" alt="Чийзкейк">
+            <h3>Чийзкейк</h3>
+            <table class="price-table">
+                <tr><td>Парче</td><td>3.90 лв /1,99 €/</td></tr>
+            </table>
+        </div>
+
+        <div class="item">
+            <img src="images/desserts/dessert.jpg" alt="Торта">
+            <h3>Домашна торта</h3>
+            <table class="price-table">
+                <tr><td>Парче</td><td>4.80 лв /2,46 €/</td></tr>
+            </table>
+        </div>
+
+    </div>
+
+
+    <!-- Котки -->
+    <h2 class="menu-section-title" id="cats">Нашите котки</h2>
+    <div class="menu-grid">
+
+        <div class="item">
+            <img src="images/cats/masha3.jpeg" alt="Мърко">
+            <h3>Маша</h3>
+            <p>Дива, точно като Маша от "Маша и Мечока"</p>
+        </div>
+
+        <div class="item">
+            <img src="images/cats/shushi2.jpeg" alt="Луна">
+            <h3>Шоша</h3>
+            <p>Спокойна, обича да спи в телевиозира.</p>
+        </div>
+
+        <div class="item">
+            <img src="images/cats/fluffy.jpeg" alt="Тигър">
+            <h3>Флъфи</h3>
+            <p>Голям сладур, обича да позира за снимки.</p>
+        </div>
+
+    </div>
+
+
+    <!-- Зали -->
+    <h2 class="menu-section-title" id="rooms">Нашите зали</h2>
+    <div class="menu-grid">
+
+        <div class="item">
+            <img src="images/interior.jpg" alt="Основна зала">
+            <h3>Основна зала</h3>
+            <p>Уютна, светла и подходяща за срещи и работа.</p>
+        </div>
+
+        <div class="item">
+            <img src="images/rooms/catsroom.jpg" alt="Котешка зала">
+            <h3>Котешка зала</h3>
+            <p>Тук можете да се насладите на компанията на нашите котки.</p>
+        </div>
+
+        <div class="item">
+            <img src="images/rooms/quiteroom.jpg" alt="Тиха зала">
+            <h3>Тиха зала</h3>
+            <p>Идеална за учене, работа или спокойствие.</p>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    © 2026 Café Riss
+</footer>
+
 </body>
 </html>

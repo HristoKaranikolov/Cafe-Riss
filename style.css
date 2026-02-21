@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family-Comfortaa:wght@400;700&display=swap');
 
-
 /*----------------------------------------------------------------------*/
 /* Начало */
 body{
@@ -129,13 +128,127 @@ footer{
 }
 
 
+/*-----------------------------------------------------------------------------------*/
+/* Меню */
+
+/* Grid за всички секции */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* Карта на продукт */
+.item {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    /* Ключът към равните височини */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Снимки – еднаква височина */
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Заглавия – фиксирана минимална височина */
+.item h3 {
+    margin-bottom: 10px;
+    color: #6E472D;
+    min-height: 28px; /* за да не се разместват */
+}
+
+/* Таблица с цени */
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    /* Залепя таблицата долу */
+    margin-top: auto;
+}
+
+.price-table td {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.price-table td:last-child {
+    font-weight: bold;
+    color: #6E472D;
+}
+
+/* Котки */
+.cats-section {
+    margin-top: 50px;
+}
+
+.cats-section h2 {
+    color: #6E472D;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.cats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.cat-card {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    /* За равни височини при котките */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cat-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.cat-card h3 {
+    margin-bottom: 8px;
+    color: #6E472D;
+    min-height: 28px;
+}
+
+.cat-card p {
+    font-size: 16px;
+    color: #3A2E25;
+    margin-top: auto; /* Описание долу */
+}
+.menu-section-title {
+    margin-top: 200px;
+    margin-bottom: 25px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*Контакти*/
 
 /* Контейнер за цялата "Контакти" страница */
 .contact-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
     font-size: 18px;
@@ -207,7 +320,7 @@ footer{
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: 94%;
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 8px;
